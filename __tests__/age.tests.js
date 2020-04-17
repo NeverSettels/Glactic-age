@@ -34,4 +34,9 @@ describe('User class', () => {
     user.calculateExpectancy()
     expect(user.expectancy).toBe(81.1)
   })
+  test('Checks that calculateExpectancy returns right expectancy for Rather not say', () => {
+    let user = new User(24, "F", "Erica")
+    user.calculateExpectancy()
+    expect(user.expectancy).toBe(78.6)
+  })
 });
