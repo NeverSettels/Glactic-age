@@ -6,4 +6,9 @@ export class Planet {
   calculateYears(years) {
     return years * this.multiplier;
   }
+  calculateExpectancy(years, expectancy) {
+    let planetYears = this.calculateYears(years);
+    let planetExpectancy = this.calculateYears(expectancy)
+    return planetYears;
+  }
 }
