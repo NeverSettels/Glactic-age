@@ -38,15 +38,17 @@ $(document).ready(() => {
   let user = {};
 
 
-  $('.form-cont').submit(event => {
+  $('#form-cont').submit(event => {
     event.preventDefault();
-    $('.form-cont').addClass('no-display')
+    $('#form-cont').addClass('no-display')
     let age = $('#age').val();
     let name = $('#name').val();
     let sex = $('#sex').val();
     user = new User(age, sex, name)
     calculateExpectancy()
     $('#planet-cont').html(planetsHTML)
+    console.log($('#planet-cont '));
+
   })
 
 }); 
