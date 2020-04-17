@@ -26,10 +26,12 @@ describe('Planet class', () => {
 describe('User class', () => {
   test('Checks that calculateExpectancy returns right expectancy for male', () => {
     let user = new User(24, "M", "Eric")
+    user.calculateExpectancy()
     expect(user.expectancy).toBe(76.1)
   })
   test('Checks that calculateExpectancy returns right expectancy for female', () => {
     let user = new User(24, "F", "Erica")
+    user.calculateExpectancy()
     expect(user.expectancy).toBe(81.1)
   })
 });
