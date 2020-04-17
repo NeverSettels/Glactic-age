@@ -26,18 +26,14 @@ _This program is designed to calculate a user age in different parts of the sola
 5. Step five: Drag the html file into your broswer. 
 
 
-or enjoy it on [Netlyfy]()
 
 ## **Known Bugs**
 
-There are no known bugs at this time.
+Strange Jquery bug that breaks UI
 
 ## **Support and contact details**
 
 If you have any questions, comments, or concerns, feel free to contact the content creator at settels.eric@gmail.com 
-
-## **Future Plans**
-
 
 
 ## **Technologies used**
