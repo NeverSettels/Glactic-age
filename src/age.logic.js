@@ -36,7 +36,7 @@ export class User {
     } else if (this.sex === 'F') {
       this.expectancy = 81.1
     } else {
-      //this.expectancy =78.6
+      this.expectancy = 78.6
     }
 
   }
