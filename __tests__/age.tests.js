@@ -1,4 +1,4 @@
-import { Planet } from '../src/age.logic.js'
+import { Planet, User } from '../src/age.logic.js'
 
 
 
@@ -10,14 +10,26 @@ describe('Planet class', () => {
   })
   test('Checks that calculateExpectancy returns the right age expectancy and wether its  under ', () => {
     let mars = new Planet('Mars', 1.88)
-    expect(mars.calculateExpectancy(24, 35)).toEqual([20.68, 'under'])
+    expect(mars.calculatePlanetExpectancy(24, 35)).toEqual([20.68, 'under'])
   })
-  test('Checks that calculateExpectancy returns the right age expectancy and wether its  over ', () => {
+  test('Checks that calculatePlanetExpectancy returns the right age expectancy and wether its  over ', () => {
     let mars = new Planet('Mars', 1.88)
-    expect(mars.calculateExpectancy(35, 24)).toEqual([20.68, 'over'])
+    expect(mars.calculatePlanetExpectancy(35, 24)).toEqual([20.68, 'over'])
   })
-  test('Checks that calculateExpectancy returns the right age expectancy and wether its equal ', () => {
+  test('Checks that calculatePlanetExpectancy returns the right age expectancy and wether its equal ', () => {
     let mars = new Planet('Mars', 1.88)
-    expect(mars.calculateExpectancy(24, 24)).toEqual([0, 'equal'])
+    expect(mars.calculatePlanetExpectancy(24, 24)).toEqual([0, 'equal'])
+  })
+});
+
+
+describe('User class', () => {
+  test('Checks that calculateExpectancy returns right expectancy for male', () => {
+    let user = new User(24, "M", "Eric")
+    expect(user.expectancy).toBe(76.1)
+  })
+  test('Checks that calculateExpectancy returns right expectancy for female', () => {
+    let user = new User(24, "F", "Erica")
+    expect(user.expectancy).toBe(81.1)
   })
 });

@@ -6,7 +6,7 @@ export class Planet {
   calculateYears(years) {
     return years * this.multiplier;
   }
-  calculateExpectancy(years, expectancy) {
+  calculatePlanetExpectancy(years, expectancy) {
     let planetYears = this.calculateYears(years);
     let planetExpectancy = this.calculateYears(expectancy)
     let overUnderEqual = ""
@@ -20,5 +20,22 @@ export class Planet {
       overUnderEqual = "equal";
     }
     return [calculatedExpectancy, overUnderEqual];
+  }
+}
+
+export class User {
+  constructor(age, sex, name) {
+    this.age = age;
+    this.sex = sex;
+    this.name = name;
+    this.expectancy = 0;
+  }
+  calculateExpectancy() {
+    if (this.sex === "M") {
+      //this.expectancy = 76.1 
+    } else if (this.sex === 'F') {
+      //this.expectancy = 81.1
+    }
+
   }
 }
