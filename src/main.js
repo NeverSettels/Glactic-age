@@ -17,7 +17,7 @@ $(document).ready(() => {
   let user = {};
 
 
-  $('.form-cont').submit(event => {
+  $('#form-cont').submit(event => {
     event.preventDefault();
     $('.form-cont').addClass('no-display')
     let age = $('#age').val();
