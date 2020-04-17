@@ -4,6 +4,6 @@ export class Planet {
     this.multiplier = multiplier;
   }
   calculateYears(years) {
-    return years
+    return years * this.multiplier;
   }
 }
