@@ -23,6 +23,7 @@ $(document).ready(() => {
     let age = $('#age').val();
     let name = $('#name').val();
     let sex = $('#sex').val();
+
     user = new User(age, sex, name)
     user.calculateExpectancy()
 
